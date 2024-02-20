@@ -15,6 +15,14 @@ def hbnb():
     """display hbnb"""
     return 'HBNB'
 
+@app.route('/c/<text>', strict_slashes=False)
+def c(text):
+    """display “C ” followed by the value of the text variable
+    replace(_) with space()
+    """
+    text = text.replace('_', ' ')
+    return 'C {}'.format(text)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
