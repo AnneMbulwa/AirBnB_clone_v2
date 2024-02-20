@@ -10,6 +10,7 @@ def hello_hbnb():
     """display hbnb"""
     return 'Hello HBNB!'
 
+
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
     """display hbnb"""
